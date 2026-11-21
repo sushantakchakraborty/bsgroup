@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | BS Group Vets - Premium Veterinary Healthcare Solutions</title>
+    <meta name="description" content="Learn about BS Group Vets, a trusted leader in veterinary healthcare, dedicated to animal nutrition, pharmaceuticals, and innovative livestock solutions.">
+    
+    <!-- Google Fonts (Strictly Using Barlow from the Home Page) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- AOS Scroll Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Inherited & Compiled Brand CSS System -->
+    <style>
+        :root {
+            /* Brand Core Color Palette */
+            --brand-primary: #3964c7;
+            --brand-dark: #092032;
+            --brand-gold: #ae8d06;
+            
+            --text-muted: #64748b;
+            --light-bg: #f8fafc;
+            
+            /* Structural Variables */
+            --card-shadow: 0 20px 40px rgba(9, 32, 50, 0.05);
+            --transition-smooth: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+            --font-family-base: 'Barlow', sans-serif;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            color: #475569;
+            background-color: #ffffff;
+            overflow-x: hidden;
+            line-height: 1.7;
+        }
+
+        /* Typography Hierarchy Alignment */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-base);
+            color: var(--brand-dark);
+            font-weight: 700;
+        }
+
+        .section-padding {
+            padding: 100px 0;
+        }
+
+        /* Section Header Badges */
+        .subtitle-badge {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-weight: 700;
+            color: var(--brand-primary);
+            background: rgba(57, 100, 199, 0.08);
+            padding: 8px 18px;
+            border-radius: 4px;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        /* Reusable Standard Corporate Buttons */
+        .btn-brand-primary {
+            background: var(--brand-primary);
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 4px;
+            font-weight: 600;
+            border: none;
+            box-shadow: 0 4px 12px rgba(57, 100, 199, 0.2);
+            transition: var(--transition-smooth);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-brand-primary:hover {
+            background: #2b51aa;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(57, 100, 199, 0.3);
+        }
+
+        .btn-brand-outline {
+            background: transparent;
+            color: var(--brand-primary);
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            border: 2px solid var(--brand-primary);
+            transition: var(--transition-smooth);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-brand-outline:hover {
+            background: var(--brand-primary);
+            color: #ffffff;
+            transform: translateY(-2px);
+        }
+
+        /* Consistent Component Card Styles */
+        .brand-card {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            transition: var(--transition-smooth);
+        }
+
+        /* Micro-Animations: Image Zoom Framework */
+        .img-hover-container {
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+        }
+
+        .img-hover-container img {
+            transition: var(--transition-smooth);
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .img-hover-container:hover img {
+            transform: scale(1.05);
+        }
+
+        /* ----------------------------------------------------------------
+           NAVBAR (Reused from existing layout structural assets)
+        ----------------------------------------------------------------- */
+        .custom-navbar {
+            padding: 20px 0;
+            background: #ffffff;
+            box-shadow: 0 4px 30px rgba(9, 32, 50, 0.03);
+            border-bottom: 1px solid #f1f5f9;
+        }
+        .nav-link {
+            font-weight: 600;
+            color: var(--brand-dark) !important;
+            padding: 8px 16px !important;
+            transition: var(--transition-smooth);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            letter-spacing: 0.5px;
+        }
+        .nav-link:hover, .nav-link.active {
+            color: var(--brand-primary) !important;
+        }
+
+        /* ----------------------------------------------------------------
+           HERO BANNER
+        ----------------------------------------------------------------- */
+        .about-hero {
+            background: linear-gradient(rgba(9, 32, 50, 0.9), rgba(9, 32, 50, 0.95)), 
+                        url('https://images.unsplash.com/photo-1584132967334-10e028bd69f7?auto=format&fit=crop&q=80&w=1920') no-repeat center center/cover;
+            padding: 150px 0 100px 0;
+            color: #ffffff;
+        }
+        
+        .breadcrumb-item, .breadcrumb-item a {
+            color: rgba(255, 255, 255, 0.6) !important;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .breadcrumb-item.active {
+            color: var(--brand-gold) !important;
+        }
+
+        /* SECTION 1: WHO WE ARE */
+        .quote-box {
+            border-left: 4px solid var(--brand-gold);
+            background: var(--light-bg);
+            padding: 25px 30px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        /* SECTION 2: TIMELINE */
+        .timeline-step {
+            position: relative;
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: var(--card-shadow);
+            border-top: 4px solid var(--brand-primary);
+            transition: var(--transition-smooth);
+            padding: 30px;
+            height: 100%;
+        }
+        .timeline-step:hover {
+            transform: translateY(-5px);
+            border-top-color: var(--brand-gold);
+        }
+        .timeline-year {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: rgba(9, 32, 50, 0.06);
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            transition: var(--transition-smooth);
+        }
+        .timeline-step:hover .timeline-year {
+            color: rgba(174, 141, 6, 0.12);
+        }
+        .timeline-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 4px;
+            background: rgba(57, 100, 199, 0.06);
+            color: var(--brand-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+
+        /* SECTION 3: MISSION VISION VALUES */
+        .mvv-card {
+            padding: 40px;
+            height: 100%;
+        }
+        .mvv-card:hover {
+            transform: translateY(-5px);
+        }
+        .mvv-icon {
+            font-size: 2.8rem;
+            color: var(--brand-primary);
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        /* SECTION 4: WHY BS GROUP VETS */
+        .feature-card {
+            padding: 35px;
+            height: 100%;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(57, 100, 199, 0.3);
+        }
+        .feature-card .icon-wrapper {
+            width: 54px;
+            height: 54px;
+            border-radius: 4px;
+            background: rgba(57, 100, 199, 0.06);
+            color: var(--brand-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 25px;
+            transition: var(--transition-smooth);
+        }
+        .feature-card:hover .icon-wrapper {
+            background: var(--brand-primary);
+            color: #ffffff;
+        }
+
+        /* SECTION 5: OUR STRENGTH */
+        .strength-block {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 25px;
+        }
+        .strength-icon {
+            font-size: 1.4rem;
+            color: var(--brand-gold);
+            margin-right: 20px;
+            margin-top: 2px;
+        }
+
+        /* SECTION 6: OUR BUSINESS GROUP */
+        .group-card {
+            padding: 40px 30px;
+            text-align: center;
+            height: 100%;
+        }
+        .group-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--brand-primary);
+        }
+        .group-logo-box {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--brand-dark);
+        }
+
+        /* SECTION 7: OUR IMPACT */
+        .counter-section {
+            background: var(--brand-dark);
+            color: #ffffff;
+            padding: 80px 0;
+            border-top: 4px solid var(--brand-gold);
+        }
+        .counter-box h2 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--brand-primary);
+            margin-bottom: 5px;
+        }
+
+        /* SECTION 8: QUALITY COMMITMENT */
+        .quality-bg {
+            background-color: var(--light-bg);
+            border-radius: 8px;
+            padding: 50px;
+            border: 1px solid #e2e8f0;
+        }
+
+        /* SECTION 9: WHY CUSTOMERS TRUST US */
+        .trust-card {
+            padding: 30px;
+            border-left: 4px solid var(--brand-primary);
+            height: 100%;
+        }
+        .trust-card:hover {
+            border-left-color: var(--brand-gold);
+            transform: translateX(4px);
+        }
+
+        /* SECTION 10: CALL TO ACTION */
+        .cta-section {
+            background: linear-gradient(135deg, var(--brand-dark) 0%, #113552 100%);
+            color: #ffffff;
+            border-radius: 8px;
+            padding: 70px 50px;
+            border-bottom: 4px solid var(--brand-gold);
+        }
+
+        /* ----------------------------------------------------------------
+           FOOTER (Reused completely from existing core parameters)
+        ----------------------------------------------------------------- */
+        .site-footer {
+            background: var(--brand-dark);
+            color: rgba(255,255,255,0.65);
+            padding: 80px 0 30px 0;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .site-footer h5 {
+            color: #ffffff;
+            margin-bottom: 25px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
+        .footer-links {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+        .footer-links a {
+            color: rgba(255,255,255,0.65);
+            text-decoration: none;
+            transition: var(--transition-smooth);
+        }
+        .footer-links a:hover {
+            color: var(--brand-primary);
+            padding-left: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <span style="font-weight: 800; font-size: 1.5rem; color: var(--brand-dark);">BS GROUP <span style="color: var(--brand-primary);">VETS</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Business Scale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="about-hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-duration="800">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                        </ol>
+                    </nav>
+                    <span class="subtitle-badge text-white" style="background: rgba(255,255,255,0.12)">About BS Group Vets</span>
+                    <h1 class="display-5 text-white mb-4 fw-bold">Committed to Better Animal Health Through Innovation</h1>
+                    <p class="lead text-white-50">Driving scientific advancements and high-quality solutions across livestock, poultry, and aquaculture industries nationwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 1: WHO WE ARE -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="800">
+                    <div class="img-hover-container" style="height: 520px;">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&q=80&w=800" alt="Veterinary Healthcare Research Laboratory">
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="800">
+                    <span class="subtitle-badge">Who We Are</span>
+                    <h2 class="mb-4 text-uppercase">Trusted Veterinary Healthcare Company</h2>
+                    <p>BS Group Vets stands at the forefront of the veterinary healthcare industry, delivering state-of-the-art formulations designed to optimize animal health and production parameters. With deep-rooted industry experience, we recognize the critical challenges faced by modern farmers and veterinary practitioners, responding with premium therapeutic and nutritional assets.</p>
+                    <p>Our strictly scientific approach leverages advanced biochemistry and targeted animal nutrition methodologies. Every therapeutic solution, compound feed supplement, and preventive health formulation undergoes systematic evaluations to enforce safety parameters and ensure highly bioavailable active components across diverse animal species.</p>
+                    <p>Dedicated to sustainable farming practices, our long-term vision positions us as an enduring partner in food security and animal care. By securing strong customer trust through transparent validation and predictable outcome parameters, we consistently elevate the benchmarks of veterinary distribution systems across global territories.</p>
+                    <div class="quote-box mt-4">
+                        <p class="mb-0 fw-bold h5 text-dark">"Healthy Animals Build a Stronger Future."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: OUR JOURNEY -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-lg-6 mx-auto">
+                    <span class="subtitle-badge">Our History</span>
+                    <h2 class="text-uppercase">Evolution & Corporate Milestones</h2>
+                </div>
+            </div>
+            <div class="row g-4" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-sm-6 col-lg-4">
+                    <div class="timeline-step">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-icon"><i class="bi bi-building"></i></div>
+                        <h4>Foundation</h4>
+                        <p class="text-muted small mb-0">Established corporate framework to provide core therapeutic solutions to regional farming communities.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="timeline-step">
+                        <div class="timeline-year">2018</div>
+                        <div class="timeline-icon"><i class="bi bi-search"></i></div>
+                        <h4>Research</h4>
+                        <p class="text-muted small mb-0">Inaugurated full-scale laboratory operations focusing heavily on natural growth and gut-health bio-mechanisms.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="timeline-step">
+                        <div class="timeline-year">2020</div>
+                        <div class="timeline-icon"><i class="bi bi-capsule"></i></div>
+                        <h4>Product Dev</h4>
+                        <p class="text-muted small mb-0">Commercialized highly concentrated liquid formulations and performance minerals across regional zones.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="timeline-step">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-icon"><i class="bi bi-globe"></i></div>
+                        <h4>Market Expansion</h4>
+                        <p class="text-muted small mb-0">Scaled operations to multiple state divisions, onboarding verified distributors and corporate farms.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="timeline-step">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-icon"><i class="bi bi-diagram-3"></i></div>
+                        <h4>Distribution Growth</h4>
+                        <p class="text-muted small mb-0">Integrated systematic digital inventory networks to optimize cold-chain supply operations seamlessly.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4">
+                    <div class="timeline-step">
+                        <div class="timeline-year">2026</div>
+                        <div class="timeline-icon"><i class="bi bi-cpu"></i></div>
+                        <h4>Future Innovation</h4>
+                        <p class="text-muted small mb-0">Pioneering precision biotech nutrition molecules targeting maximum operational yield and ecological safety.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: MISSION VISION CORE VALUES -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="brand-card mvv-card text-center">
+                        <div class="mvv-icon"><i class="bi bi-rocket-takeoff"></i></div>
+                        <h3 class="text-uppercase">Our Mission</h3>
+                        <p class="text-muted mb-0">To deliver scientifically validated, exceptionally engineered veterinary products and nutritional matrices that promote animal health, boost productivity metrics, and support ecological sustainability profiles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="brand-card mvv-card text-center">
+                        <div class="mvv-icon"><i class="bi bi-eye"></i></div>
+                        <h3 class="text-uppercase">Our Vision</h3>
+                        <p class="text-muted mb-0">To transform into India's most modern and trusted veterinary healthcare enterprise, acknowledged globally for robust research, high operational metrics, and profound adherence to bio-security.</p>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="brand-card mvv-card text-center">
+                        <div class="mvv-icon"><i class="bi bi-shield-check"></i></div>
+                        <h3 class="text-uppercase">Core Values</h3>
+                        <p class="text-muted mb-3">The principles guiding our institutional practices:</p>
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+                            <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Quality First</span>
+                            <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Continuous Innovation</span>
+                            <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Uncompromising Integrity</span>
+                            <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Customer Value</span>
+                            <span class="badge bg-light text-dark border px-3 py-2 fw-medium">Animal Welfare</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 4: WHY BS GROUP VETS -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-lg-6 mx-auto">
+                    <span class="subtitle-badge">Why Choose Us</span>
+                    <h2 class="text-uppercase">Engineered for Operational Excellence</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up">
+                    <div class="brand-card feature-card">
+                        <div class="icon-wrapper"><i class="bi bi-award"></i></div>
+                        <h4>High Quality Products</h4>
+                        <p class="text-muted mb-0">Engineered within certified manufacturing platforms following systematic multi-tier quality checks.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="brand-card feature-card">
+                        <div class="icon-wrapper"><i class="bi bi-droplet"></i></div>
+                        <h4>Scientific Formulation</h4>
+                        <p class="text-muted mb-0">Strictly balanced chemical matrices that maximize physical absorption profiles and performance parameters.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="brand-card feature-card">
+                        <div class="icon-wrapper"><i class="bi bi-heart-pulse"></i></div>
+                        <h4>Veterinary Expertise</h4>
+                        <p class="text-muted mb-0">Developed by experienced veterinarians, immunologists, and field professionals to address actual ground realities.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="brand-card feature-card">
+                        <div class="icon-wrapper"><i class="bi bi-truck"></i></div>
+                        <h4>Reliable Distribution</h4>
+                        <p class="text-muted mb-0">Robust multi-state logistics frameworks ensuring optimized transit timelines and product safety parameters.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="brand-card feature-card">
+                        <div class="icon-wrapper"><i class="bi bi-headset"></i></div>
+                        <h4>Customer Support</h4>
+                        <p class="text-muted mb-0">Dedicated support wings providing real-time guidance on optimized feeding systems and disease handling.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="250">
+                    <div class="brand-card feature-card">
+                        <div class="icon-wrapper"><i class="bi bi-lightning-charge"></i></div>
+                        <h4>Continuous Innovation</h4>
+                        <p class="text-muted mb-0">Consistent capital placement into R&amp;D fields to design advanced feed solutions for high performance yield.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: OUR STRENGTH -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+                    <span class="subtitle-badge">Our Pillars</span>
+                    <h2 class="mb-4 text-uppercase">The Infrastructure Driving Our Enterprise</h2>
+                    
+                    <div class="strength-block">
+                        <i class="bi bi-check-square-fill strength-icon"></i>
+                        <div>
+                            <h4>Research Driven</h4>
+                            <p class="text-muted mb-0">Heavy reliance on microbiological assays and modern compound screen trials to guarantee maximum clinical safety.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strength-block">
+                        <i class="bi bi-check-square-fill strength-icon"></i>
+                        <div>
+                            <h4>Quality Manufacturing</h4>
+                            <p class="text-muted mb-0">Ultra-modern infrastructure ensuring precise component blending, avoiding cross-contamination concerns.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="strength-block">
+                        <i class="bi bi-check-square-fill strength-icon"></i>
+                        <div>
+                            <h4>Experienced Team</h4>
+                            <p class="text-muted mb-0">Supported by elite biochemists and supply coordinators ensuring excellent product standards throughout.</p>
+                        </div>
+                    </div>
+
+                    <div class="strength-block">
+                        <i class="bi bi-check-square-fill strength-icon"></i>
+                        <div>
+                            <h4>Strong Distribution Network</h4>
+                            <p class="text-muted mb-0">A structured physical reach, maintaining perfect product storage metrics across remote rural landscapes.</p>
+                        </div>
+                    </div>
+
+                    <div class="strength-block">
+                        <i class="bi bi-check-square-fill strength-icon"></i>
+                        <div>
+                            <h4>Industry Compliance</h4>
+                            <p class="text-muted mb-0">Complete alignment with standardized biological and therapeutic directives issued by statutory boards.</p>
+                        </div>
+                    </div>
+
+                    <div class="strength-block">
+                        <i class="bi bi-check-square-fill strength-icon"></i>
+                        <div>
+                            <h4>Customer Trust</h4>
+                            <p class="text-muted mb-0">Long-standing institutional equity built upon repeatable quality standards and stable pricing platforms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+                    <div class="img-hover-container" style="height: 580px;">
+                        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800" alt="High Quality Veterinary Production Facility">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 6: OUR BUSINESS GROUP -->
+    <!-- <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-lg-6 mx-auto">
+                    <span class="subtitle-badge">Corporate Structure</span>
+                    <h2 class="text-uppercase">Our Distinct Business Divisions</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+                    <div class="brand-card group-card">
+                        <div class="group-logo-box text-uppercase">B.S. Marketing Agency</div>
+                        <p class="text-muted small mb-0">Manages expansive field promotions, wholesale logistics, and multi-tier supply chains nationwide.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="brand-card group-card">
+                        <div class="group-logo-box text-uppercase">B.S. Biotech Pvt. Ltd.</div>
+                        <p class="text-muted small mb-0">Focuses on biological assays, innovative fermentation formulas, and ecosystem correction solutions.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="brand-card group-card">
+                        <div class="group-logo-box text-uppercase">B.S. Pharmaceuticals</div>
+                        <p class="text-muted small mb-0">Manufactures targeted therapeutic treatments, broad-spectrum correctors, and veterinary medicines.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="brand-card group-card">
+                        <div class="group-logo-box text-uppercase">Osaro Exim Pvt. Ltd.</div>
+                        <p class="text-muted small mb-0">Oversees strategic import-export modules, connecting local markets with global raw supply channels.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- SECTION 7: OUR IMPACT -->
+    <section class="counter-section">
+        <div class="container">
+            <div class="row g-4 text-center">
+                <div class="col-6 col-md-3">
+                    <div class="counter-box">
+                        <h2 style="color: var(--brand-gold);">500+</h2>
+                        <p class="text-white-50 mb-0">Veterinary Partners</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="counter-box">
+                        <h2 style="color: var(--brand-gold);">30+</h2>
+                        <p class="text-white-50 mb-0">Premium Products</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="counter-box">
+                        <h2 style="color: var(--brand-gold);">100+</h2>
+                        <p class="text-white-50 mb-0">Enterprise Clients</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="counter-box">
+                        <h2 style="color: var(--brand-gold);">100%</h2>
+                        <p class="text-white-50 mb-0">Active Supply Reach</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 8: QUALITY COMMITMENT -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="quality-bg" data-aos="fade-up">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <span class="subtitle-badge">Uncompromising Standard</span>
+                        <h2 class="mb-4 text-uppercase">Our Rigorous Quality Commitment</h2>
+                        <p>At BS Group Vets, quality control isn't simply a phase within our operational design—it represents the cornerstone of our corporate architecture. From raw molecule assessment through automated line packaging, our protocols meet deep safety metrics, ensuring that every batch exhibits therapeutic equivalence and biochemical stability.</p>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-shield-check text-primary me-2 fw-bold"></i> Thorough Quality Assurance at every step</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-shield-check text-primary me-2 fw-bold"></i> Strict Safety Standards matching international parameters</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-shield-check text-primary me-2 fw-bold"></i> Data-backed Scientific Development cycles</li>
+                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-shield-check text-primary me-2 fw-bold"></i> Fully transparent and Ethical Production Practices</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="img-hover-container" style="height: 380px;">
+                            <img src="https://images.unsplash.com/photo-1607619056574-7b8f304f3c6f?auto=format&fit=crop&q=80&w=800" alt="Quality Assured Pharmaceutical Production Line">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 9: WHY CUSTOMERS TRUST US -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="row mb-5 text-center">
+                <div class="col-lg-6 mx-auto">
+                    <span class="subtitle-badge">Trust Vectors</span>
+                    <h2 class="text-uppercase">Distinct Attributes of Our Brand Equity</h2>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+                    <div class="brand-card trust-card">
+                        <h4 class="text-uppercase">Professional Team</h4>
+                        <p class="text-muted mb-0">Managed by veteran industrial executives and veterinary consultants who structure outcomes based on deep sector analytics.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="brand-card trust-card">
+                        <h4 class="text-uppercase">Product Reliability</h4>
+                        <p class="text-muted mb-0">Stable physical structures, complete traceability codes, and consistent active concentrations over extensive storage cycles.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="150">
+                    <div class="brand-card trust-card">
+                        <h4 class="text-uppercase">Fast Technical Support</h4>
+                        <p class="text-muted mb-0">Direct access to application specialists ready to decode custom batch metrics or optimize feeding plans on site.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="brand-card trust-card">
+                        <h4 class="text-uppercase">Continuous Molecular Innovation</h4>
+                        <p class="text-muted mb-0">Proactive formulation iterations that account for regional environmental shifts, biological mutations, and modern performance objectives.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="250">
+                    <div class="brand-card trust-card">
+                        <h4 class="text-uppercase">Long-Term Institutional Relationships</h4>
+                        <p class="text-muted mb-0">We build comprehensive strategic alliances rather than transactional accounts, ensuring stable supply availability year after year.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 10: CALL TO ACTION -->
+    <section class="container my-5" data-aos="zoom-in" data-aos-duration="800">
+        <div class="cta-section text-center">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="display-6 text-white fw-bold mb-4 text-uppercase">Let's Build Better Animal Healthcare Together</h2>
+                    <p class="lead text-white-50 mb-5">Connect with our corporate distribution division or speak directly with our clinical animal health experts to optimize your farm output metrics.</p>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+                        <a href="#" class="btn-brand-primary text-dark bg-white shadow-none">Contact Us</a>
+                        <a href="#" class="btn-brand-outline text-white border-white">Explore Products</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <h5 class="fw-bold text-white">BS GROUP VETS</h5>
+                    <p class="text-muted mt-3">Advanced veterinary healthcare infrastructure, premium therapeutic solutions, and trusted animal nutrition formulations engineered for predictable, high-value performance.</p>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 offset-lg-1">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">About Corporate</a></li>
+                        <li><a href="#">Product Catalog</a></li>
+                        <li><a href="#">Business Structure</a></li>
+                        <li><a href="#">Technical Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <h5>Corporate Office</h5>
+                    <p class="text-muted mb-2">New Town, Kolkata, West Bengal, India</p>
+                    <p class="text-muted mb-0">Email: info@bsgroupvets.com</p>
+                </div>
+            </div>
+            <hr style="border-color: rgba(255,255,255,0.08)">
+            <div class="row mt-4">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="small text-muted mb-0">&copy; 2026 BS Group Vets. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="small text-muted mb-0">Designed with Professional Precision</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Scroll Animation Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+</body>
+</html>

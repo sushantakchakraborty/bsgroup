@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Fish Health Products | BS Group Vets | Veterinary Healthcare</title>
+    <meta name="description" content="Discover advanced aquaculture and fish farming healthcare solutions, feed supplements, and growth promoters for aquaculture productivity.">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<style>
+    .flip-card {
+        background-color: transparent;
+        /* width: 450px; */
+        height: 450px;
+        /* border: 1px solid #f1f1f1; */
+        perspective: 1000px;
+        padding: 2% 8%;
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-front img {
+        height: 100%;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+        position: relative;
+    }
+
+    .flip-card-back img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .   {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} */
+
+    .flip-btn {
+        background: transparent;
+        padding: 100% 43% 0% 58%;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    /* .flip-btn:hover{
+    background:#007bff;
+    color:#fff;
+} */
+</style>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- TOP NAV -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+
+                <div class="col-auto contact-info">
+                    <p><i class='bx bxs-envelope'></i> info@bsgroupvets.com</p>
+                      <p><i class='bx bxs-phone-call'></i> +91 9830038530</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" class="img-fluid logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="poultry.html">POULTRY</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="cattle.html">CATTLE</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item active" href="fish.html">FISH</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photo Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO BANNER -->
+    <header class="hero-banner fish-hero">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Fish Health Products</h1>
+            <p class="lead opacity-90">Advanced aquaculture healthcare solutions for healthy fish, higher survival rates, improved growth and sustainable farming.</p>
+        </div>
+    </header>
+
+    <!-- PRODUCT DETAIL SECTION -->
+    <section class="py-5 bg-light">
+        <div class="container my-4">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Specialized Range</h2>
+                <p class="section-subtitle">Scientifically formulated animal health products to ensure aquaculture productivity and sustainable fish farming.</p>
+            </div>
+
+            <div class="row g-4">
+
+                <!-- CARD 1: AQUA-GROW -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="vet-card">
+                        <div class="vet-card-img-wrapper">
+                            <img src="img/fish-feed.jpg" alt="Aqua-Grow Fish Growth Promoter">
+                        </div>
+                        <div class="vet-card-body">
+                            <span class="vet-card-badge">Growth Promoter</span>
+                            <h3 class="vet-card-title">Aqua-Grow</h3>
+                            <p class="vet-card-desc">Advanced growth-promoting formula containing balanced micro-nutrients and essential vitamins to accelerate fish weight gain and improve feed utilization.</p>
+                            <ul class="vet-card-highlights">
+                                <li><i class="bx bxs-check-circle"></i> Boosts daily weight gain</li>
+                                <li><i class="bx bxs-check-circle"></i> Improves feed conversion (FCR)</li>
+                                <li><i class="bx bxs-check-circle"></i> Stimulates healthy appetite</li>
+                            </ul>
+                            <div class="vet-card-footer">
+                                <a href="ars.pdf" class="btn btn-vet-primary" target="_blank">
+                                    <i class="bx bxs-download"></i> Brochure
+                                </a>
+                                <button class="btn btn-vet-outline" data-bs-toggle="modal" data-bs-target="#modalAquaGrow">
+                                    <i class="bx bx-list-ul"></i> Specs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 2: BIO-SHIELD -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="vet-card">
+                        <div class="vet-card-img-wrapper">
+                            <img src="img/fish-health.jpg" alt="Bio-Shield Fish Immunity Support">
+                        </div>
+                        <div class="vet-card-body">
+                            <span class="vet-card-badge">Immunity Support</span>
+                            <h3 class="vet-card-title">Bio-Shield</h3>
+                            <p class="vet-card-desc">A premium immunostimulant enriched with beta-glucans and herbal bio-actives to shield aquaculture species from bacterial, viral, and fungal diseases.</p>
+                            <ul class="vet-card-highlights">
+                                <li><i class="bx bxs-check-circle"></i> Triggers non-specific immunity</li>
+                                <li><i class="bx bxs-check-circle"></i> Fights common water pathogens</li>
+                                <li><i class="bx bxs-check-circle"></i> Strengthens tissue barriers</li>
+                            </ul>
+                            <div class="vet-card-footer">
+                                <a href="coli.pdf" class="btn btn-vet-primary" target="_blank">
+                                    <i class="bx bxs-download"></i> Brochure
+                                </a>
+                                <button class="btn btn-vet-outline" data-bs-toggle="modal" data-bs-target="#modalBioShield">
+                                    <i class="bx bx-list-ul"></i> Specs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 3: AQUA-CLEAN -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="vet-card">
+                        <div class="vet-card-img-wrapper">
+                            <img src="img/shrimp-farm.avif" alt="Aqua-Clean Water Quality Conditioner">
+                        </div>
+                        <div class="vet-card-body">
+                            <span class="vet-card-badge">Water Care</span>
+                            <h3 class="vet-card-title">Aqua-Clean</h3>
+                            <p class="vet-card-desc">Biological water conditioner utilizing specialized bacterial strains to degrade organic waste, sludge, and toxic gases like ammonia and hydrogen sulfide.</p>
+                            <ul class="vet-card-highlights">
+                                <li><i class="bx bxs-check-circle"></i> Neutralizes ammonia & nitrites</li>
+                                <li><i class="bx bxs-check-circle"></i> Degrades pond sludge naturally</li>
+                                <li><i class="bx bxs-check-circle"></i> Stabilizes phytoplankton bloom</li>
+                            </ul>
+                            <div class="vet-card-footer">
+                                <a href="tit.pdf" class="btn btn-vet-primary" target="_blank">
+                                    <i class="bx bxs-download"></i> Brochure
+                                </a>
+                                <button class="btn btn-vet-outline" data-bs-toggle="modal" data-bs-target="#modalAquaClean">
+                                    <i class="bx bx-list-ul"></i> Specs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 4: AQUA-DIGEST -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="vet-card">
+                        <div class="vet-card-img-wrapper">
+                            <img src="img/fish.jpg" alt="Aqua-Digest Digestive Aid">
+                        </div>
+                        <div class="vet-card-body">
+                            <span class="vet-card-badge">Digestive Aid</span>
+                            <h3 class="vet-card-title">Aqua-Digest</h3>
+                            <p class="vet-card-desc">Multi-enzyme feed additive fortified with gut probiotics to optimize protein digestion, maximize nutrient absorption, and maintain a healthy gut microbiota.</p>
+                            <ul class="vet-card-highlights">
+                                <li><i class="bx bxs-check-circle"></i> Boosts protein digestibility</li>
+                                <li><i class="bx bxs-check-circle"></i> Inhibits toxic gut bacteria</li>
+                                <li><i class="bx bxs-check-circle"></i> Prevents shrimp white gut</li>
+                            </ul>
+                            <div class="vet-card-footer">
+                                <a href="bre.pdf" class="btn btn-vet-primary" target="_blank">
+                                    <i class="bx bxs-download"></i> Brochure
+                                </a>
+                                <button class="btn btn-vet-outline" data-bs-toggle="modal" data-bs-target="#modalAquaDigest">
+                                    <i class="bx bx-list-ul"></i> Specs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5: STRESS-NIL -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="vet-card">
+                        <div class="vet-card-img-wrapper">
+                            <img src="img/fish-feed.jpg" alt="Stress-Nil Stress Reduction">
+                        </div>
+                        <div class="vet-card-body">
+                            <span class="vet-card-badge">Stress Support</span>
+                            <h3 class="vet-card-title">Stress-Nil</h3>
+                            <p class="vet-card-desc">Electrolyte and Vitamin C formulation designed to reduce stress caused by transportation, high stocking densities, water parameters fluctuation, and handling.</p>
+                            <ul class="vet-card-highlights">
+                                <li><i class="bx bxs-check-circle"></i> Prevents osmotic stress shock</li>
+                                <li><i class="bx bxs-check-circle"></i> Limits transport mortality</li>
+                                <li><i class="bx bxs-check-circle"></i> Fortified with stable Vitamin C</li>
+                            </ul>
+                            <div class="vet-card-footer">
+                                <a href="nep.pdf" class="btn btn-vet-primary" target="_blank">
+                                    <i class="bx bxs-download"></i> Brochure
+                                </a>
+                                <button class="btn btn-vet-outline" data-bs-toggle="modal" data-bs-target="#modalStressNil">
+                                    <i class="bx bx-list-ul"></i> Specs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6: OXY-MAX -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="vet-card">
+                        <div class="vet-card-img-wrapper">
+                            <img src="img/fish-health.jpg" alt="Oxy-Max Dissolved Oxygen Enhancer">
+                        </div>
+                        <div class="vet-card-body">
+                            <span class="vet-card-badge">Oxygen Care</span>
+                            <h3 class="vet-card-title">Oxy-Max</h3>
+                            <p class="vet-card-desc">Emergency oxygen release powder that rapidly elevates dissolved oxygen levels in pond water, rescuing fish from severe respiratory stress and suffocation.</p>
+                            <ul class="vet-card-highlights">
+                                <li><i class="bx bxs-check-circle"></i> Instant dissolved oxygen release</li>
+                                <li><i class="bx bxs-check-circle"></i> Prevents morning hypoxia loss</li>
+                                <li><i class="bx bxs-check-circle"></i> Oxidizes toxic bottom nitrites</li>
+                            </ul>
+                            <div class="vet-card-footer">
+                                <a href="kup.pdf" class="btn btn-vet-primary" target="_blank">
+                                    <i class="bx bxs-download"></i> Brochure
+                                </a>
+                                <button class="btn btn-vet-outline" data-bs-toggle="modal" data-bs-target="#modalOxyMax">
+                                    <i class="bx bx-list-ul"></i> Specs
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SUPPORT / CTA SECTION -->
+    <section class="container my-5">
+        <div class="cta-section text-center rounded-4 shadow-sm p-5" style="background: linear-gradient(135deg, #3964c7, #092032); color: white;">
+            <h2 class="fw-bold mb-3 text-white">Expert Fish Health Solutions</h2>
+            <p class="mb-4 text-white opacity-90">Need technical advice on aquaculture or fish farming? Our veterinary and aquaculture specialists are here to help improve fish health and farm productivity.</p>
+            <a href="#" class="btn btn-light btn-lg px-5 rounded-pill fw-bold text-primary">Contact Us Today</a>
+        </div>
+    </section>
+
+    <!-- TECHNICAL SPECIFICATION MODALS -->
+    
+    <!-- Modal 1: Aqua-Grow -->
+    <div class="modal fade" id="modalAquaGrow" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-bold">AQUA-GROW – Technical Specification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                            <div class="bg-light rounded-3 p-5 h-100 d-flex align-items-center justify-content-center w-100">
+                                <i class="fa-solid fa-chart-line fa-5x text-info" style="font-size: 6rem;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="badge badge-biotech mb-2">Growth Promoter</span>
+                            <h3 class="fw-bold text-primary">AQUA-GROW</h3>
+                            <p class="text-muted">
+                                A scientific blend of amino acids, minerals, and enzymes designed to optimize metabolic rate and feed efficiency in fresh and brackish water species.
+                            </p>
+                            <h6 class="fw-bold text-primary mt-4">Key Benefits</h6>
+                            <ul>
+                                <li>Improves average daily gain (ADG) in carp, tilapia, and catfish</li>
+                                <li>Enhances gut protease and amylase activity</li>
+                                <li>Accelerates digestive transit and feed utilization</li>
+                                <li>Reduces waste production and organic loading in ponds</li>
+                                <li>Supports early-stage larval and fingerling development</li>
+                            </ul>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Application</h6>
+                                    <p class="small text-muted">Fish ponds, nurseries, hatcheries, and cage culture.</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Dosage</h6>
+                                    <p class="small text-muted">2-3g per kg of feed daily, or as directed by an aquaculture consultant.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Bio-Shield -->
+    <div class="modal fade" id="modalBioShield" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-bold">BIO-SHIELD – Technical Specification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                            <div class="bg-light rounded-3 p-5 h-100 d-flex align-items-center justify-content-center w-100">
+                                <i class="fa-solid fa-shield-halved fa-5x text-success" style="font-size: 6rem;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="badge badge-biotech mb-2">Immunity Support</span>
+                            <h3 class="fw-bold text-primary">BIO-SHIELD</h3>
+                            <p class="text-muted">
+                                Natural pathogen defense formula that triggers macrophage activity and antibody synthesis in fish and shrimp under high stocking densities.
+                            </p>
+                            <h6 class="fw-bold text-primary mt-4">Key Benefits</h6>
+                            <ul>
+                                <li>Controls outbreaks of Aeromonas, Pseudomonas, and Vibrio species</li>
+                                <li>Minimizes mortality rates during high-stress disease windows</li>
+                                <li>Boosts the thickness of protective epidermal mucus</li>
+                                <li>Repairs damaged gill tissues and skin lesions</li>
+                                <li>Enhances phagocytosis and lysozyme activity in fish blood</li>
+                            </ul>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Application</h6>
+                                    <p class="small text-muted">Fish and shrimp farms during disease risk periods.</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Dosage</h6>
+                                    <p class="small text-muted">3-5g per kg of feed for 7-10 days consecutively.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Aqua-Clean -->
+    <div class="modal fade" id="modalAquaClean" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-bold">AQUA-CLEAN – Technical Specification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                            <div class="bg-light rounded-3 p-5 h-100 d-flex align-items-center justify-content-center w-100">
+                                <i class="fa-solid fa-droplet fa-5x text-info" style="font-size: 6rem;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="badge badge-biotech mb-2">Water Care</span>
+                            <h3 class="fw-bold text-primary">AQUA-CLEAN</h3>
+                            <p class="text-muted">
+                                High-potency multi-strain probiotic formulation developed specifically for bioremediation of pond bottoms and water columns in aquaculture.
+                            </p>
+                            <h6 class="fw-bold text-primary mt-4">Key Benefits</h6>
+                            <ul>
+                                <li>Maintains optimal phytoplankton bloom stability</li>
+                                <li>Prevents black mud formation and soil degradation</li>
+                                <li>Accelerates the nitrogen cycle in water bodies</li>
+                                <li>Promotes a healthy zooplankton community structure</li>
+                                <li>Reduces the frequency of water exchange requirements</li>
+                            </ul>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Application</h6>
+                                    <p class="small text-muted">Broad-spectrum pond water and soil treatment.</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Dosage</h6>
+                                    <p class="small text-muted">500g to 1kg per acre of pond area every 15-20 days.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 4: Aqua-Digest -->
+    <div class="modal fade" id="modalAquaDigest" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-bold">AQUA-DIGEST – Technical Specification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                            <div class="bg-light rounded-3 p-5 h-100 d-flex align-items-center justify-content-center w-100">
+                                <i class="fa-solid fa-bacteria fa-5x text-warning" style="font-size: 6rem;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="badge badge-biotech mb-2">Digestive Aid</span>
+                            <h3 class="fw-bold text-primary">AQUA-DIGEST</h3>
+                            <p class="text-muted">
+                                Encapsulated digestive enzymes and stable live microbes designed to colonize the fish gut, outcompeting pathogenic bacteria and stabilizing digestion.
+                            </p>
+                            <h6 class="fw-bold text-primary mt-4">Key Benefits</h6>
+                            <ul>
+                                <li>Enhances feed digestibility of plant-based protein diets</li>
+                                <li>Inhibits colonization of Vibrio and other harmful gut flora</li>
+                                <li>Decreases incidence of white gut syndrome in shrimp</li>
+                                <li>Maximizes micronutrient absorption and mineral uptake</li>
+                                <li>Supports digestive system recovery after antibiotic treatment</li>
+                            </ul>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Application</h6>
+                                    <p class="small text-muted">Daily feed additive for commercial fish and shrimp feed.</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Dosage</h6>
+                                    <p class="small text-muted">1-2g per kg of feed mixed with binding gel.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 5: Stress-Nil -->
+    <div class="modal fade" id="modalStressNil" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-bold">STRESS-NIL – Technical Specification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                            <div class="bg-light rounded-3 p-5 h-100 d-flex align-items-center justify-content-center w-100">
+                                <i class="fa-solid fa-heart fa-5x" style="font-size: 6rem; color: #e91e63;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="badge badge-biotech mb-2">Stress Support</span>
+                            <h3 class="fw-bold text-primary">STRESS-NIL</h3>
+                            <p class="text-muted">
+                                A balanced mix of electrolytes, amino acids, and high-purity ascorbic acid that protects cellular integrity and reduces stress-induced cortisol levels.
+                            </p>
+                            <h6 class="fw-bold text-primary mt-4">Key Benefits</h6>
+                            <ul>
+                                <li>Prevents osmotic shock during salinity changes</li>
+                                <li>Boosts survival rates during larval and fingerling transport</li>
+                                <li>Prevents appetite loss during sudden temperature fluctuations</li>
+                                <li>Enhances skin and shell collagen repair post-molt in shrimp</li>
+                                <li>Elevates overall disease resistance in intensive farming systems</li>
+                            </ul>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Application</h6>
+                                    <p class="small text-muted">Fish and shrimp transport, stocking, and transition periods.</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Dosage</h6>
+                                    <p class="small text-muted">5-10g per kg of feed, or 1-2g per liter of transport water.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 6: Oxy-Max -->
+    <div class="modal fade" id="modalOxyMax" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-bold">OXY-MAX – Technical Specification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row">
+                        <div class="col-md-5 text-center mb-4 mb-md-0 d-flex align-items-center justify-content-center">
+                            <div class="bg-light rounded-3 p-5 h-100 d-flex align-items-center justify-content-center w-100">
+                                <i class="fa-solid fa-wind fa-5x text-info" style="font-size: 6rem;"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <span class="badge badge-biotech mb-2">Oxygen Care</span>
+                            <h3 class="fw-bold text-primary">OXY-MAX</h3>
+                            <p class="text-muted">
+                                Chemical oxygen generator designed to release active atomic oxygen slowly at the pond bottom, stabilizing the aquaculture environment during critical hours.
+                            </p>
+                            <h6 class="fw-bold text-primary mt-4">Key Benefits</h6>
+                            <ul>
+                                <li>Prevents mass mortality from early-morning hypoxia</li>
+                                <li>Eliminates toxic anaerobic bacteria at the pond floor</li>
+                                <li>Supports aeration systems during power outages or cloud cover</li>
+                                <li>Neutralizes toxic sulfites and nitrites by oxidation</li>
+                                <li>Improves pond bottom soil quality and organic breakdown rates</li>
+                            </ul>
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Application</h6>
+                                    <p class="small text-muted">Emergency oxygen supplementation in intensive ponds.</p>
+                                </div>
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Dosage</h6>
+                                    <p class="small text-muted">1-2kg per acre in emergency surfacing, scattered over pond bottom.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <!-- Company Group -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <h4 class="footer-title" style="color: #fff;"> <img src="img/logo_footer.png" alt=""></h4>
+
+                        <ul class="footer-links">
+
+                            <li>B.S. Marketing Agency</li>
+
+                            <li>B.S. Biotech Pvt. Ltd.</li>
+
+                            <li>B.S. Pharmaceuticals</li>
+
+                            <li>Osaro Exim Pvt. Ltd.</li>
+
+                        </ul>
+
+                    </div>
+
+                    <!-- About -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <h4 class="footer-title text-white">About Us</h4>
+
+                        <p>
+
+                            B.S. Group of Companies is a research and technology oriented veterinary pharmaceutical
+                            company ranked among the top veterinary companies in India.
+
+                        </p>
+
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="col-lg-4 col-md-6">
+
+                        <h4 class="footer-title text-white">Contact Us</h4>
+
+                        <p>
+
+                            <i class='bx bx-map'></i>
+
+                            6A, S. N. Banerjee Road, Futnani Chambers, Gate No. 7, Suite Nos. 37B & F, 3rd Floor Kolkata
+                            – 700087, INDIA
+
+                        </p>
+
+                        <p>
+
+                            <i class='bx bx-phone'></i>
+
+                            +91 9830038530
+
+                        </p>
+
+                        <p>
+
+                            <i class='bx bx-phone-call'></i>
+
+                            +91 (033) 7962 7200 (24/7 General Inquiry)
+
+                        </p>
+
+                        <p>
+
+                            <i class='bx bx-envelope'></i>
+
+                            info@bsgroupvets.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="footer-bottom text-center">
+
+            <div class="container">
+
+                <p>© 2026 B.S. Group Vets. All Rights Reserved.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

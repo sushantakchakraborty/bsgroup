@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BS Group Vets | Veterinary Healthcare</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+</head>
+<style>
+    .flip-card {
+        background-color: transparent;
+        /* width: 450px; */
+        height: 450px;
+        /* border: 1px solid #f1f1f1; */
+        perspective: 1000px;
+        padding: 2% 8%;
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        /* Safari */
+        backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+
+    .flip-card-front img {
+        height: 100%;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+        background-color: dodgerblue;
+        color: white;
+        transform: rotateY(180deg);
+        position: relative;
+    }
+
+    .flip-card-back img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* .   {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+} */
+
+    .flip-btn {
+        background: transparent;
+        padding: 100% 43% 0% 58%;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #000;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    /* .flip-btn:hover{
+    background:#007bff;
+    color:#fff;
+} */
+</style>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+    <!-- TOP NAV -->
+    <!-- NAVBAR -->
+    <div class="top-nav" id="home">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+
+                <div class="col-auto social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                </div>
+
+                <div class="col-auto contact-info">
+                    <p><i class='bx bxs-envelope'></i> info@bsgroupvets.com</p>
+                    <p><i class='bx bxs-phone-call'></i> +91 9830038530</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                <img src="img/logo.png" alt="" class="img-fluid logo">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" href="#" data-bs-toggle="dropdown">
+                            Products
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item active" href="poultry.html">POULTRY</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="cattle.html">CATTLE</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="fish.html">FISH</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Photo Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+
+
+
+
+    <header class="hero-banner">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Poultry Health Products</h1>
+            <p class="lead opacity-90">Advanced veterinary solutions for better poultry health, productivity, and
+                performance.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container my-5">
+
+            <div class="text-center mb-5">
+                <h2 class="section-title">Our Specialized Range</h2>
+            </div>
+
+            <!-- CARD 1 -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-pdf">
+                        <img src="img/ars.jpeg" alt="ARS Brochure" class="img-fluid">
+
+                        <a href="ars.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            See Brochure
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-img">
+                        <img src="img/ars.png" class="img-fluid" alt="Poultry Health Products">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- CARD 2 -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img">
+                        <img src="img/colisol.png" class="img-fluid" alt="Poultry Health Products">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-pdf">
+                        <img src="img/colisol.jpg
+                        " alt="ARS Brochure" class="img-fluid">
+
+                        <a href="coli.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            See Brochure
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CARD 3 -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-pdf">
+                        <img src="img/titre.jfif" alt="ARS Brochure" class="img-fluid">
+
+                        <a href="tit.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            See Brochure
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-img">
+                        <img src="img/tit.png" class="img-fluid" alt="Poultry Health Products">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <!-- CARD 4 -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img">
+                        <img src="img/breatheze.png" class="img-fluid" alt="Poultry Health Products">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-pdf">
+                        <img src="img/breathe.jpg" alt="ARS Brochure" class="img-fluid">
+
+                        <a href="bre.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            See Brochure
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CARD 5 -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-pdf">
+                        <img src="img/nip.jpg" alt="ARS Brochure" class="img-fluid">
+
+                        <a href="nep.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            See Brochure
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-img">
+                        <img src="img/nip.png" class="img-fluid" alt="Poultry Health Products">
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <!-- CARD 6 -->
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="product-img">
+                        <img src="img/kup.png" class="img-fluid" alt="Poultry Health Products">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="product-pdf">
+                        <img src="img/kuph.jpg" alt="ARS Brochure" class="img-fluid">
+
+                        <a href="kup.pdf" target="_blank">
+                            <i class="fa-solid fa-download"></i>
+                            See Brochure
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section class="container " style="margin-top: -7%;">
+        <div class="cta-section text-center">
+            <h2 class="fw-bold mb-3 text-dark">Expert Support for Your Farm</h2>
+            <p class="mb-4 text-muted">Need technical advice on poultry management? Our veterinary consultants are here
+                to help.</p>
+            <a href="#contact" class="btn btn-success btn-lg px-5 rounded-pill">Contact Us Today</a>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="modal fade" id="modalNEPHROS" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-header px-4">
+                    <h5 class="modal-title fw-bold">NEPHROS – Technical Specification</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body p-4">
+                    <div class="row">
+
+                        <div class="col-md-5 text-center mb-4 mb-md-0">
+                            <div class="bg-light rounded-3 p-5 h-100 d-flex align-items-center justify-content-center">
+                                <i class="fa-solid fa-kidneys fa-5x text-info"></i>
+                            </div>
+                        </div>
+
+                        <div class="col-md-7">
+
+                            <span class="badge badge-biotech mb-2">Kidney Health Support</span>
+                            <h3 class="fw-bold">NEPHROS</h3>
+
+                            <p class="text-muted">
+                                Supports the normal functioning of the avian kidney system
+                                and helps maintain renal health in poultry birds.
+                            </p>
+
+                            <h6 class="fw-bold text-primary mt-4">Key Benefits</h6>
+                            <ul class="small">
+                                <li>Supports proper kidney function in poultry</li>
+                                <li>Helps maintain normal renal portal circulation</li>
+                                <li>Improves metabolic waste elimination</li>
+                                <li>Supports urinary balance and kidney health</li>
+                                <li>Helps birds maintain overall physiological balance</li>
+                            </ul>
+
+                            <h6 class="fw-bold text-primary mt-3">Product Information</h6>
+                            <p class="small text-muted">
+                                The avian kidneys are located on either side of the vertebral column
+                                and play a crucial role in removing metabolic waste and maintaining
+                                fluid balance in birds.
+                            </p>
+
+                            <div class="row mt-4">
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Application</h6>
+                                    <p class="small">
+                                        Supports kidney health in broilers, layers and breeder birds.
+                                    </p>
+                                </div>
+
+                                <div class="col-6">
+                                    <h6 class="fw-bold mb-1">Category</h6>
+                                    <p class="small">
+                                        Poultry Feed Supplement
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="container">
+
+                <div class="row gy-4">
+
+                    <!-- Company Group -->
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <h4 class="footer-title" style="color: #fff;"> <img src="img/logo_footer.png" alt=""></h4>
+
+                        <ul class="footer-links">
+
+                            <li>B.S. Marketing Agency</li>
+
+                            <li>B.S. Biotech Pvt. Ltd.</li>
+
+                            <li>B.S. Pharmaceuticals</li>
+
+                            <li>Osaro Exim Pvt. Ltd.</li>
+
+                        </ul>
+
+                        <!-- <div class="footer-social">
+
+<a href="#"><i class='bx bxl-facebook'></i></a>
+
+<a href="#"><i class='bx bxl-twitter'></i></a>
+
+<a href="#"><i class='bx bxl-instagram'></i></a>
+
+<a href="#"><i class='bx bxl-linkedin'></i></a>
+
+</div> -->
+
+                    </div>
+
+
+                    <!-- About -->
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <h4 class="footer-title text-white">About Us</h4>
+
+                        <p>
+
+                            B.S. Group of Companies is a research and technology oriented veterinary pharmaceutical
+                            company ranked among the top veterinary companies in India.
+
+                        </p>
+
+                    </div>
+
+
+                    <!-- Contact -->
+
+                    <div class="col-lg-4 col-md-6">
+
+                        <h4 class="footer-title text-white">Contact Us</h4>
+
+                        <p>
+
+                            <i class='bx bx-map'></i>
+
+                            6A, S. N. Banerjee Road, Futnani Chambers, Gate No. 7, Suite Nos. 37B & F, 3rd Floor Kolkata
+                            – 700087, INDIA
+
+                        </p>
+
+                        <p>
+
+                            <i class='bx bx-phone'></i>
+
+                            +91 9830038530
+
+                        </p>
+
+                        <p>
+
+                            <i class='bx bx-phone-call'></i>
+
+                            +91 (033) 7962 7200 (24/7 General Inquiry)
+
+                        </p>
+
+                        <p>
+
+                            <i class='bx bx-envelope'></i>
+
+                            info@bsgroupvets.com
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Footer -->
+
+        <div class="footer-bottom text-center">
+
+            <div class="container">
+
+                <p>© 2026 B.S. Group Vets. All Rights Reserved.</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
